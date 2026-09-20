@@ -1,0 +1,13 @@
+BEGIN
+  DISPLAY "Enter student mark (0-100): "
+  INPUT mark
+  IF mark < 0 OR mark > 100 THEN
+    DISPLAY "Error: Mark must be between 0 and 100"
+  ELSE
+    IF mark >= 50 THEN
+      DISPLAY "Student status: PASS"
+    ELSE
+      DISPLAY "Student status: FAIL"
+    ENDIF
+  ENDIF
+END
